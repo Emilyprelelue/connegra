@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@font-face{
+    font-family: f1;
+    src: url(/coolvetica/coolvetica\ compressed\ hv.otf);
+}
+
+
+body{
+    margin: 0%;
+    padding: 0%;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    word-wrap: break-word;
+    overflow: break-word;
+    background-color: black;
+}
+
+
+
+header{
+    text-align: center;
+    font-size: 150%;
+    text-shadow: 7px 7px 7px #afb2cc;
+}
+
+img{
+    height: 50%;
+    margin-right: 30%;
+
+}
+
+
+h1, h2{
+    font-weight: 800;
+    color: #2B2A4C;
+    text-transform: uppercase;
+
+
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background: #ffffff;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 25px;
+    animation: pauta 5s ease-in-out;
+    animation-timeline: view();
+    animation-range: cover 0 cover 40%;
+    display: flex;
+}
+
+section.modulo p{
+    margin-bottom: 50px;
+    font-size: 1.3em;
+    color: #ffffff;
+}
+
+section.modulo h2{
+    margin-bottom: 30px;
+    font-size: 30px;
+    letter-spacing: .3em;
+    text-align: center;
+}
+
+section.modulo.content{
+    padding: 40px 0;
+    background: #282A3A;
+}
+
+section.modulo.parallax{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     height: 100vh !important;
+     width: 100%;
+     overflow: hidden;
+     position: relative;
+     background-position: 50% 50%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+section.modulo.parallax h1{
+    color: beige;
+    text-align: center;
+    font-size: 100px;
+    z-index: 100;
+    font-family: f1;
+
+
+
+}
+
+section.modulo.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+    background: linear-gradient(to bottom,rgba(0,0,0,0) 0, rgba(0,0,0,0) 30%, #000 100% );
+}
+
+
+
+
+section.modulo.parallax-1{
+    background-image: url("https://images02.brasildefato.com.br/f644b410ccb33875c988bd7a3e3a78d3.jpeg");
+}
+
+
+section.modulo.parallax-2{
+    background-image: url("https://imagens.ebc.com.br/fBscLyTcFeMMZ_ImMMwe1svHF-4=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/_mg_5715_01.jpg?itok=1VcgQ4U_");
+}
+
+section.modulo.parallax-3{
+    background-image: url("https://d3un0zjblgkxzb.cloudfront.net/drupal/public/styles/imagem_paragraph_foto/public/media/image/2023-03/000_1TU801-800x600.jpg.jpeg?VersionId=B48aR1D7e1Y1a8kpybEbjMB3xvLwIUEP&itok=Mst8-hXY");
+}
+
+
+footer{
+    text-align: center;
+    font-size: 15px;
+    background-color: #4a4e6e;
+}
